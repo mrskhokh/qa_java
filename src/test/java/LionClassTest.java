@@ -1,4 +1,3 @@
-import com.example.Animal;
 import com.example.Feline;
 import com.example.Lion;
 import org.junit.Test;
@@ -6,7 +5,6 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
-
 
 import java.util.List;
 
@@ -48,9 +46,6 @@ public class LionClassTest {
         Mockito.verify(feline).eatMeat();
     }
 
-    /**
-     * Проверяем метод getKittens()
-     */
     @Test
     public void testGetKittens() throws Exception {
         int expected = 1;
@@ -60,9 +55,6 @@ public class LionClassTest {
         Mockito.verify(feline, Mockito.times(1)).getKittens();
     }
 
-    /**
-     * Проверяем метод HasMale()
-     */
     @Test
     public void testHasMale() throws Exception {
     Lion myLion = new Lion("Самец",feline);

@@ -1,12 +1,11 @@
 import com.example.Feline;
 import org.junit.Test;
-import org.junit.runners.Parameterized;
 import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 @RunWith(Parameterized.class)
 public class FelineTest {
@@ -35,7 +34,7 @@ public class FelineTest {
     }
 
     @Test
-    public void getFamilyTest() throws Exception {
+    public void getFamilyTest() {
         assertThat(feline.getFamily()).isEqualTo("Кошачьи");
 
     }
